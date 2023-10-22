@@ -1,0 +1,13 @@
+pipeline {
+    agent any // You can specify a specific agent label if needed
+
+    stages {
+        stage('Run Python Script on D Drive') {
+            steps {
+                step {
+                  sh 'python3 main.py'
+                }
+                }
+            }
+        }
+    }
